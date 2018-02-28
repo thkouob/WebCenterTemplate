@@ -52,7 +52,12 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #7bc3d1;
+    color: #fff;
+}
+
+.aUnderLine>li {
+    text-decoration: underline;
+    padding-right: 10px;
 }
 
 ul,
@@ -97,6 +102,15 @@ hr {
     margin: 0 auto;
     margin-bottom: 30px;
     border: 0;
+}
+
+.imgWidth {
+    width: 500px;
+}
+
+i {
+    color: #121d1f;
+    margin-right: 10px;
 }
 
 
@@ -239,7 +253,7 @@ hr {
 /* developer Section */
 
 #developer {
-    padding: 100px 0;
+    padding: 100px 0 80px 0;
     background: #f6f6f6;
 }
 
@@ -383,6 +397,13 @@ hr {
     /* W3C */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
     /* IE6-9 */
+}
+
+
+/* Project Section */
+
+#project {
+    background-color: #121d1f;
 }
 
 
@@ -571,7 +592,7 @@ a:focus,
         padding: 120px 0;
     }
     header .intro-text {
-        padding-top: 200px;
+        padding-top: 150px;
         padding-bottom: 150px;
     }
     .timeline:before {
@@ -599,6 +620,9 @@ a:focus,
         padding: 0 30px 20px 20px;
         text-align: left;
     }
+    .imgWidth {
+        width: 300px;
+    }
 }
 
 @media(min-width:992px) {
@@ -624,6 +648,9 @@ a:focus,
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 20px 20px;
     }
+    .imgWidth {
+        width: 400px;
+    }
 }
 
 @media(min-width:1200px) {
@@ -645,6 +672,9 @@ a:focus,
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 10px 100px 20px 20px;
     }
+    .imgWidth {
+        width: 500px;
+    }
 }
 
 .intro-col {
@@ -658,7 +688,12 @@ a:focus,
 
 .introtextleft {
     text-align: left;
-    margin: 0 60px 0 30px;
+    margin: 25px 40px;
+}
+
+.introtextright {
+    text-align: left;
+    margin: 25px 40px;
 }
 
 #header hr {
@@ -678,4 +713,11 @@ td {
 
 tr:nth-child(even) {
     background-color: #f2f2f2
+}
+
+.divWithLine {
+    border: 1px solid #a0a5a5;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }

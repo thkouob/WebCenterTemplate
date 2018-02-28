@@ -49,8 +49,8 @@
                         <li class="hidden">
                             <a href="#page-top"></a>
                         </li>
-                        <li> <a class="page-scroll" href="#developer">Developer</a> </li>
-                        <li> <a class="page-scroll" href="#systemAdmin">System Admin</a> </li>
+                        <li> <a class="page-scroll" href="#developer" onclick="devLearnMore()">Developer</a> </li>
+                        <li> <a class="page-scroll" href="#systemAdmin" onclick="sysLearnMore()">System Admin</a> </li>
                         <li> <a class="page-scroll" href="#contact">Contact</a> </li>
                     </ul>
                 </div>
@@ -64,12 +64,11 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-6 intro-col" style="border-right: 1px solid;">
                         <h1>Developer</h1>
-                        <hr>
+                        <img src="img/devHeader.jpg" class="imgWidth">
                         <div class="introtextleft">
                             <div>
                                 Quickly links:
-                                <ul class="liinline">
-                                    <li><a href="">siteminder</a></li>
+                                <ul class="liinline aUnderLine">
                                     <li><a href="">siteminder</a></li>
                                     <li><a href="">siteminder</a></li>
                                     <li><a href="">siteminder</a></li>
@@ -83,31 +82,30 @@
                             <div>
                                 Top Issues:
                                 <ul>
-                                    <li><a href="">siteminder</a></li>
-                                    <li><a href="">siteminder</a></li>
-                                    <li><a href="">siteminder</a></li>
+                                    <li><i class="fa fa-bookmark-o"></i><a href="">siteminder</a></li>
+                                    <li><i class="fa fa-bookmark-o"></i><a href="">siteminder</a></li>
+                                    <li><i class="fa fa-bookmark-o"></i><a href="">siteminder</a></li>
                                 </ul>
                             </div>
                             <div>
                                 FAQ:
                                 <ul>
-                                    <li><a href="">siteminder</a></li>
-                                    <li><a href="">siteminder</a></li>
-                                    <li><a href="">siteminder</a></li>
+                                    <li><i class="fa fa-question"></i><a href="">siteminder</a></li>
+                                    <li><i class="fa fa-question"></i><a href="">siteminder</a></li>
+                                    <li><i class="fa fa-question"></i><a href="">siteminder</a></li>
                                 </ul>
                             </div>
                         </div>
                         <hr>
-                        <a href="#DevAbout" class="btn btn-default btn-lg page-scroll">More Info</a>
+                        <a href="#developer" class="btn btn-default btn-lg page-scroll" onclick="devLearnMore()">More Info</a>
                     </div>
                     <div class="col-md-6 col-sm-6 intro-col">
                         <h1>SystemAdmin</h1>
-                        <hr>
-                        <div class="introtextleft">
+                        <img src="img/sysHeader.png" class="imgWidth">
+                        <div class="introtextright">
                             <div>
                                 Quickly links:
-                                <ul class="liinline">
-                                    <li><a href="">siteminder</a></li>
+                                <ul class="liinline aUnderLine">
                                     <li><a href="">siteminder</a></li>
                                     <li><a href="">siteminder</a></li>
                                     <li><a href="">siteminder</a></li>
@@ -121,22 +119,22 @@
                             <div>
                                 Top Issues:
                                 <ul>
-                                    <li><a href="">siteminder</a></li>
-                                    <li><a href="">siteminder</a></li>
-                                    <li><a href="">siteminder</a></li>
+                                    <li><i class="fa fa-bookmark-o"></i><a href="">siteminder</a></li>
+                                    <li><i class="fa fa-bookmark-o"></i><a href="">siteminder</a></li>
+                                    <li><i class="fa fa-bookmark-o"></i><a href="">siteminder</a></li>
                                 </ul>
                             </div>
                             <div>
                                 FAQ:
                                 <ul>
-                                    <li><a href="">siteminder</a></li>
-                                    <li><a href="">siteminder</a></li>
-                                    <li><a href="">siteminder</a></li>
+                                    <li><i class="fa fa-question"></i><a href="">siteminder</a></li>
+                                    <li><i class="fa fa-question"></i><a href="">siteminder</a></li>
+                                    <li><i class="fa fa-question"></i><a href="">siteminder</a></li>
                                 </ul>
                             </div>
                         </div>
                         <hr>
-                        <a href="#DevAbout" class="btn btn-default btn-lg page-scroll">More Info</a>
+                        <a href="#systemAdmin" class="btn btn-default btn-lg page-scroll" onclick="sysLearnMore()">More Info</a>
                     </div>
                 </div>
             </div>
@@ -144,7 +142,7 @@
     </header>
 
     <!-- Developer Section -->
-    <div id="developer" class="text-center">
+    <div id="developer" class="text-center" style="display:none;">
         <div class="container">
             <div class="section-title center">
                 <h2>Program Process</h2>
@@ -160,61 +158,79 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Creative Agency</h4>
-                                    <h4 class="subheading">Front-end Developer</h4>
+                                    <h4>In your pc</h4>
+                                    <h4 class="subheading">Start to programmer</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                                    <ul>
+                                        <li><i class="fa fa-check-square-o"></i>Request web hosting</li>
+                                        <li><i class="fa fa-check-square-o"></i>Request web hosting</li>
+                                        <li><i class="fa fa-check-square-o"></i>Request web hosting</li>
+                                    </ul>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Creative Agency</h4>
-                                    <h4 class="subheading">Front-end Developer</h4>
+                                    <h4 class="subheading">Deploy to test</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                                    <ul>
+                                        <li><i class="fa fa-check-square-o"></i>Request web hosting</li>
+                                        <li><i class="fa fa-check-square-o"></i>Request web hosting</li>
+                                        <li><i class="fa fa-check-square-o"></i>Request web hosting</li>
+                                    </ul>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <h4>Test environment</h4>
+                                <h4><br>Test</h4>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Creative Agency</h4>
-                                    <h4 class="subheading">Front-end Developer</h4>
+                                    <h4>In Test environment</h4>
+                                    <h4 class="subheading">You might need</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                                    <ul>
+                                        <li><i class="fa fa-check-square-o"></i>Request web hosting</li>
+                                        <li><i class="fa fa-check-square-o"></i>Request web hosting</li>
+                                        <li><i class="fa fa-check-square-o"></i>Request web hosting</li>
+                                    </ul>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Creative Agency</h4>
-                                    <h4 class="subheading">Front-end Developer</h4>
+                                    <h4 class="subheading">Deploy to prod</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                                    <ul>
+                                        <li><i class="fa fa-check-square-o"></i>Request web hosting</li>
+                                        <li><i class="fa fa-check-square-o"></i>Request web hosting</li>
+                                        <li><i class="fa fa-check-square-o"></i>Request web hosting</li>
+                                    </ul>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <h4>Prod environment</h4>
+                                <h4><br>Prod</h4>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Creative Agency</h4>
-                                    <h4 class="subheading">Front-end Developer</h4>
+                                    <h4>In Prod environment</h4>
+                                    <h4 class="subheading">You might need</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                                    <ul>
+                                        <li><i class="fa fa-check-square-o"></i>Request web hosting</li>
+                                        <li><i class="fa fa-check-square-o"></i>Request web hosting</li>
+                                        <li><i class="fa fa-check-square-o"></i>Request web hosting</li>
+                                    </ul>
                                 </div>
                             </div>
                         </li>
@@ -224,36 +240,76 @@
         </div>
     </div>
     <!-- SystemAdmin Section -->
-    <div id="systemAdmin">
+    <div id="systemAdmin" style="display:none;">
         <div class="container">
             <div class="section-title text-center center">
-                <h2>Portfolio</h2>
+                <h2>SystemAdmin</h2>
                 <hr>
                 <p>test</p>
             </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 divWithLine">
+                    <div class="col-md-2">
+                        button1
+                    </div>
+                    <div class="col-md-2">
+                        button1
+                    </div>
+                    <div class="col-md-2">
+                        button1
+                    </div>
+                    <div class="col-md-2">
+                        button1
+                    </div>
+                    <div class="col-md-2">
+                        button1
+                    </div>
+                    <div class="col-md-2">
+                        button1
+                    </div>
+                </div>
+            </div>
+            <hr>
             <div style="overflow-x:auto;">
                 <table>
                     <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
+                        <th>Site</th>
+                        <th>SecureWeb</th>
+                        <th>test path</th>
+                        <th>prod path</th>
                         <th>Points</th>
                     </tr>
                     <tr>
                         <td>Jill</td>
                         <td>Smith</td>
                         <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
                     </tr>
                     <tr>
                         <td>Eve</td>
                         <td>Jackson</td>
                         <td>94</td>
+                        <td>50</td>
+                        <td>50</td>
                     </tr>
                     <tr>
                         <td>Adam</td>
                         <td>Johnson</td>
                         <td>67</td>
+                        <td>50</td>
+                        <td>50</td>
                     </tr>
                 </table>
+            </div>
+        </div>
+    </div>
+    <!-- Project Section -->
+    <div id="project">
+        <div class="container">
+            <div class="section-title center">
+                <h2>Notice</h2>
+                <p>test</p>
             </div>
         </div>
     </div>
@@ -303,7 +359,18 @@
     <script type="text/javascript" src="js/waypoints.js"></script>
     <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
     <script type="text/javascript" src="js/contact_me.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
 </body>
+<script>
+    function devLearnMore() {
+        $("#developer").css('display', 'block');
+        $("#systemAdmin").css('display', 'none');
+    }
+
+    function sysLearnMore() {
+        $("#systemAdmin").css('display', 'block');
+        $("#developer").css('display', 'none');
+    }
+</script>
 
 </html>
